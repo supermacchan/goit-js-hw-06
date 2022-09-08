@@ -25,7 +25,16 @@ button {
 
 .gallery {
   list-style: none;
+  padding: 0;
+  
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15px;
+}
+
+.gallery img {
+  width: 400px;
+  height: 260px;
+  object-fit: contain;
 }
