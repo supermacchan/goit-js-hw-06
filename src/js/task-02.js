@@ -12,5 +12,5 @@ ingredients.forEach(ingredient => {
   newItem.textContent = ingredient;
   newItem.classList.add('item');
   const ingredientsParent = document.querySelector('#ingredients');
-  ingredientsParent.prepend(newItem);
+  ingredientsParent.append(newItem);
 });
