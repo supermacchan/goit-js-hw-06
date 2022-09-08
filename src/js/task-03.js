@@ -16,14 +16,14 @@ const images = [
 const makeImagesMarkup = ({url, alt}) => {
   return `
     <li>
-      <img scr="${url}" alt="${alt}" />
+      <img src="${url}" alt="${alt}" />
     </li>
   `
 };
 
 const makeImagesList = images
   .map(makeImagesMarkup)
-  .join('')
+  .join('');
 
 const galleryList = document.querySelector('.gallery');
 galleryList.insertAdjacentHTML('afterbegin', makeImagesList);
