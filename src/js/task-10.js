@@ -14,12 +14,12 @@ clearingBtn.addEventListener('click', handleClearingBtnClick);
 let boxesElements = [];
 
 function createBoxes(amount) {
-  for (let i = 1; i <= amount; i += 1) {
+  for (let i = 1, size = 30; i <= amount; i += 1, size += 10) {
     const newItem = document.createElement('div');
     newItem.style.backgroundColor = getRandomHexColor();
     newItem.classList.add('newBox');
-    newItem.style.width = '30px';
-    newItem.style.height = '30px';
+    newItem.style.width = size + 'px';
+    newItem.style.height = size + 'px';
     boxesElements.push(newItem);
   }
 }
