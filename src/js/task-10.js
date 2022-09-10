@@ -33,6 +33,9 @@ function handleCreatingBtnClick(event) {
 function handleClearingBtnClick(event) {
   const boxesToRemove = document.querySelectorAll('.newBox');
   console.log(boxesToRemove);
-  boxesToRemove.forEach(box => { box.remove() });
+  boxesToRemove.forEach(box => {
+    box.remove();
+    boxesElements = [];
+  });
 }
 
